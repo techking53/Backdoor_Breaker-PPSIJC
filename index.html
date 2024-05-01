@@ -1,14 +1,105 @@
 <!DOCTYPE html>
+<!-- <html lang="en" data-bs-theme="dark"> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM' crossorigin='anonymous'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
     <title>Healthcare</title>
 </head>
 <body>
-    <section class="coming">
-        <h2>Coming Soon</h2>
-    </section>
+    <nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-dark-subtle">
+        <div class="container">
+          <a class="navbar-brand fs-2" href="#"><img src="Logo.png" alt="Logo" height="36" class="d-inline-block align-text-center">Self Diagnose</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="#video">Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="#edu">Disease Table</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="#symp">Symptom Diary</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section data-bs-theme="dark" class="hero bg-info-subtle" id="hero">
+            <div class="heroflex">
+                <div class="herotext">
+                    <h1 class="text-light-emphasis">Self-Diagnostics For All</h1>
+                    <p class="text-light">Self-diagnosis is a risky process with grave consequences, but can prove helpful if done correctly. Keep scrolling to find the best way to safely diagnose yourself from the comfort of your home.</p>
+                </div>
+                <img class="heroimg" src="https://blog.carlow.edu/wp-content/uploads/sites/26/2023/03/how-counselors-deal-with-self-diagnosis-and-practicing-self-care.jpg" alt="">
+            </div>
+      </section>
+      <section class="video bg-primary-subtle" id="video">
+        <h1 class="text-dark">An Introduction</h1>
+        <div class="videoflex">
+            <video controls src="https://cdn.pixabay.com/video/2021/06/21/78482-566253536_large.mp4"></video>
+        </div>
+      </section>
+      <section class="edu" id="edu">
+        <div class="container">
+            <h5>Reference this table to match your symptoms!</h5>
+            <div class="grid">
+                <h2>Disease</h2>
+                <h2>Symptoms</h2>
+                <h2>How common?</h2>
+                <h2>Doctor or not?</h2>
+                <h4 class="text-danger">Insomnia</h4>
+                <ul>
+                    <li>Improper sleep schedule</li>
+                    <li>Difficulty in sleeping</li>
+                    <li>Irregular mood patterns</li>
+                </ul>
+                <p>Very common, 1 in 3 adults show symptoms, 1 in 10 adults have severe insomnia</p>
+                <p>Go <span>to the doctor </span>if severe.</p>
+                <h4 class="text-danger">Malaria</h4>
+                <ul>
+                    <li>Fevers</li>
+                    <li>Regular Nausea and Vomiting</li>
+                    <li>Muscle Pain</li>
+                </ul>
+                <p>Common in subtropical and tropical countries</p>
+                <p>Recommended to go <span>to the doctor</span>.</p>
+                <h4 class="text-danger">Common Cold</h4>
+                <ul>
+                    <li>Runny Nose</li>
+                    <li>Incessant Sneezing</li>
+                    <li>Sore Throat</li>
+                </ul>
+                <p>Extremely Common</p>
+                <p>Not necessary to go <span>to the doctor</span></p>
+                <h4 class="text-danger">Diarrhoea</h4>
+                <ul>
+                    <li>Bloating</li>
+                    <li>Belly Cramps and Pain</li>
+                    <li>Uncomfortable Bowel Movements</li>
+                </ul>
+                <p>Relatively Common</p>
+                <p>Recommended to go <span>to the doctor</span>.</p>
+            </div>
+        </div>
+      </section>
+      <section data-bs-theme="dark" class="sympdiary bg-dark-subtle" id="symp">
+        <a href="SymptomDiary.pdf" class="btn btn-outline-primary">Download the Symptom Diary</a>
+      </section>
 </body>
 </html>
